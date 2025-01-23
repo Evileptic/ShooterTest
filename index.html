@@ -23,6 +23,7 @@
         <div id="unity-build-title">Shooter</div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/@telegram-apps/sdk@1.1.3/dist/index.iife.js"></script>
     <script>
 
       var container = document.querySelector("#unity-container");
@@ -57,11 +58,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/ShooterTest.loader.js";
+      var loaderUrl = buildUrl + "/Shooter.loader.js";
       var config = {
-        dataUrl: buildUrl + "/ShooterTest.data",
-        frameworkUrl: buildUrl + "/ShooterTest.framework.js",
-        codeUrl: buildUrl + "/ShooterTest.wasm",
+        dataUrl: buildUrl + "/Shooter.data",
+        frameworkUrl: buildUrl + "/Shooter.framework.js",
+        codeUrl: buildUrl + "/Shooter.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Shooter",
