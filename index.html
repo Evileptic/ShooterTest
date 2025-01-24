@@ -6,6 +6,16 @@
     <title>Unity WebGL Player | Shooter</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
+    <script>
+        window.onload = function () {
+            if (Telegram.WebApp) {
+                Telegram.WebApp.ready(); // Сообщаем Telegram, что приложение загружено
+                console.log("Telegram Web Apps API доступен");
+            } else {
+                console.error("Telegram Web Apps API не найден");
+            }
+        };
+    </script>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
