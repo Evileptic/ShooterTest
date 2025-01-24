@@ -7,32 +7,6 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
     <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
-    <script>
-        // Ждем загрузки страницы
-        window.onload = () => {
-            // Проверяем наличие Telegram Web App API
-            if (window.Telegram && window.Telegram.WebApp) {
-                const webApp = window.Telegram.WebApp;
-
-                // Готовим приложение
-                webApp.ready();
-
-                // Показать алерт, что приложение запущено
-                webApp.showAlert('Приложение запущено в Telegram!');
-
-                // Отправляем событие `web_app_request_fullscreen`
-                webApp.onEvent('web_app_request_fullscreen', () => {
-                    console.log('Событие web_app_request_fullscreen вызвано!');
-                });
-
-                // Вызываем событие
-                webApp.requestFullscreen();
-                console.log('Запрос на полноэкранный режим отправлен');
-            } else {
-                console.error('Telegram WebApp API недоступен');
-            }
-        };
-    </script>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
