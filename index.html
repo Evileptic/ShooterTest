@@ -6,11 +6,9 @@
     <title>Unity WebGL Player | Shooter</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="https://unpkg.com/@twa-dev/sdk@latest"></script>
+    <script src="https://telegram.org/js/telegram-web-app.js?56"></script>
     <script>
-        const { init } = window.Telegram;
-        init();
-        console.log("Telegram Apps SDK инициализирован!");
+        window.Telegram.WebApp.showAlert('Hey there!');
     </script>
   </head>
   <body>
